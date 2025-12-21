@@ -1,0 +1,12 @@
+data/*.csv
+data/*.jsonl
+
+.ipynb_checkpoints/
+
+__pycache__/
+*.pyc
+
+models/*.pkl
+
+.DS_Store
+Thumbs.db
