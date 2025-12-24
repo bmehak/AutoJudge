@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AutoJudge</title>
+</head>
+<body>
+    <h1>AutoJudge: Problem Difficulty Predictor</h1>
+
+    <form method="post">
+        <textarea name="text" rows="15" cols="100"
+        placeholder="Paste problem description here..."></textarea><br><br>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <h2>Predicted Difficulty Class: {{ prediction }}</h2>
+        <h2>Predicted Difficulty Score: {{ score }}</h2>
+    {% endif %}
+</body>
+</html>
