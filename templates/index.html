@@ -27,6 +27,7 @@
             </button>
 
             <textarea
+                id="problemInput"
                 name="text"
                 rows="10"
                 class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -35,8 +36,10 @@
 
             <div class="text-center">
                 <button
+                    id="predictBtn"
                     type="submit"
-                    class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition"
+                    disabled
+                    class="bg-blue-400 cursor-not-allowed text-white px-6 py-2 rounded-lg font-semibold transition"
                 >
                     Predict Difficulty
                 </button>
@@ -90,7 +93,7 @@
                     </span>
                 {% endif %}
             </p>
-            
+
             <p class="text-gray-700 mt-3">
                 <span class="font-medium">Difficulty Score:</span>
                 <span class="ml-2 text-blue-700 font-semibold">
@@ -111,6 +114,23 @@
         {% endif %}
 
     </div>
+    <script>
+        const textarea = document.getElementById("problemInput");
+        const button = document.getElementById("predictBtn");
 
+        if (textarea && button) {
+            textarea.addEventListener("input", () => {
+                if (textarea.value.trim().length > 0) {
+                    button.disabled = false;
+                    button.classList.remove("bg-blue-400", "cursor-not-allowed");
+                    button.classList.add("bg-blue-600", "hover:bg-blue-700");
+                } else {
+                    button.disabled = true;
+                    button.classList.add("bg-blue-400", "cursor-not-allowed");
+                    button.classList.remove("bg-blue-600", "hover:bg-blue-700");
+                }
+            });
+        }
+    </script>
 </body>
 </html>
