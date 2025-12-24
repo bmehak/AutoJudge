@@ -16,23 +16,25 @@ ridge = pickle.load(open("models/ridge_regressor.pkl", "rb"))
 def index():
     prediction = None
     score = None
+    submitted_text = None
 
     if request.method == "POST":
-        text = request.form["text"]
+        submitted_text = request.form["text"]
 
         # Classification
-        X_class = tfidf_class.transform([text])
+        X_class = tfidf_class.transform([submitted_text])
         prediction = svm.predict(X_class)[0]
 
         # Regression
-        text_len = len(text)
-        X_reg_text = tfidf_reg.transform([text])
+        text_len = len(submitted_text)
+        X_reg_text = tfidf_reg.transform([submitted_text])
         X_reg = hstack([X_reg_text, [[text_len]]])
         score = round(ridge.predict(X_reg)[0], 2)
 
     return render_template("index.html",
                            prediction=prediction,
-                           score=score)
-
+                           score=score,
+                           submitted_text=submitted_text
+                           )
 if __name__ == "__main__":
     app.run(debug=True)
