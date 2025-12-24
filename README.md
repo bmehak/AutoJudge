@@ -162,10 +162,7 @@ http://127.0.0.1:5000
 - Improve UI styling
 - Deploy the application online (Render / Railway)
 
-## 👤 Author
-Bhoomika Chourasiya
-B.Tech Computer Science & Engineering
-Indian Institute of Technology, Roorkee
+---
 
 ## ⭐ Final Note
 This project prioritizes methodology, reasoning, and completeness over chasing unrealistic accuracy numbers, reflecting real-world ML workflows and engineering best practices.
