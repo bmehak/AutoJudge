@@ -115,61 +115,57 @@ These results are **realistic and defensible** for text-only difficulty estimati
 ---
 
 ## 📂 Project Structure
-AutoJudge/
-│
-├── app.py # Flask backend
-├── README.md
-├── requirements.txt
-├── .gitignore
-│
-├── data/ # Dataset (ignored in Git)
-│
-├── notebooks/
-│ └── data_exploration.ipynb
-│
-├── models/ # Saved models (ignored in Git)
-│
-└── templates/
-└── index.html # HTML UI
+### AutoJudge/
+- data/ 
+- models/ 
+- notebooks/data_exploration.ipynb
+- templates/index.html 
+- .gitignore
+- app.py 
+- README.md
+- requirements.txt
 
 ---
 
 ## ▶️ How to Run Locally
 
 ### 1️⃣ Clone the repository
-```bash
 git clone <your-repo-url>
 cd AutoJudge
 
-2️⃣ Install dependencies
+### 2️⃣ Install dependencies
 pip install -r requirements.txt
 
-3️⃣ Run the Flask app
+### 3️⃣ Run the Flask app
 python app.py
 
-4️⃣ Open in browser
+### 4️⃣ Open in browser
 http://127.0.0.1:5000
 
-⚠️ Limitations
-Uses only textual information
-Does not include:
-Editorial solutions
-Code submissions
-Acceptance rates
-Problem tags
-Including these features would likely improve performance.
+---
 
-🔮 Future Improvements
-Incorporate problem constraints and tags
-Use transformer-based embeddings (e.g., BERT)
-Add confidence estimates for predictions
-Improve UI styling
-Deploy the application online (Render / Railway)
+## ⚠️ Limitations
+- **Uses only textual information**
+- **Does not include:**
+    - Editorial solutions
+    - Code submissions
+    - Acceptance rates
+    - Problem tags
+    - Including these features would likely improve performance.
 
-👤 Author
+    ---
+
+## 🔮 Future Improvements
+- Incorporate problem constraints and tags
+- Use transformer-based embeddings (e.g., BERT)
+- Add confidence estimates for predictions
+- Improve UI styling
+- Deploy the application online (Render / Railway)
+
+## 👤 Author
 Bhoomika Chourasiya
 B.Tech Computer Science & Engineering
 Indian Institute of Technology, Roorkee
 
-⭐ Final Note
+## ⭐ Final Note
 This project prioritizes methodology, reasoning, and completeness over chasing unrealistic accuracy numbers, reflecting real-world ML workflows and engineering best practices.
