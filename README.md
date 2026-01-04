@@ -115,16 +115,27 @@ These results are **realistic and defensible** for text-only difficulty estimati
 ---
 
 ## 📂 Project Structure
-### AutoJudge/
-- data/ 
-- models/ 
-- notebooks/data_exploration.ipynb
-- templates/index.html 
-- .gitignore
-- app.py 
-- README.md
-- requirements.txt
-
+```text
+AutoJudge/
+│
+├── app.py                        # Flask backend for ML inference and UI routing
+├── README.md                     # Project documentation
+├── requirements.txt              # Python dependencies
+├── .gitignore                    # Ignore data/models & environment files
+│
+├── data/                         # Dataset folder (excluded from Git)
+│ └── problems.csv
+│
+├── notebooks/
+│ └── data_exploration.ipynb      # Data processing & model experimentation
+│
+├── models/                       # Saved ML models (excluded from Git)
+│ ├── svm_classifier.pkl
+│ └── ridge_regressor.pkl
+│
+└── templates/
+└── index.html                    # Tailwind-styled web UI
+```
 ---
 
 ## ▶️ How to Run Locally
@@ -166,3 +177,8 @@ http://127.0.0.1:5000
 
 ## ⭐ Final Note
 This project prioritizes methodology, reasoning, and completeness over chasing unrealistic accuracy numbers, reflecting real-world ML workflows and engineering best practices.
+
+---
+
+## 👩‍💻 Author
+Bhoomika Chourasiya
