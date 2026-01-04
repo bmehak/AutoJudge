@@ -129,7 +129,7 @@ AutoJudge/
 ├── notebooks/
 │ └── data_exploration.ipynb      # Data processing & model experimentation
 │
-├── models/                       # Saved ML models (excluded from Git)
+├── models/                       # Saved ML models
 │ ├── svm_classifier.pkl
 │ └── ridge_regressor.pkl
 │
