@@ -123,7 +123,7 @@ AutoJudge/
 ├── requirements.txt              # Python dependencies
 ├── .gitignore                    # Ignore data/models & environment files
 │
-├── data/                         # Dataset folder (excluded from Git)
+├── data/                         # Dataset folder
 │ └── problems.csv
 │
 ├── notebooks/
@@ -141,17 +141,30 @@ AutoJudge/
 ## ▶️ How to Run Locally
 
 ### 1️⃣ Clone the repository
-git clone <your-repo-url>
+```
+git clone https://github.com/bmehak/AutoJudge
 cd AutoJudge
+```
 
 ### 2️⃣ Install dependencies
+```
 pip install -r requirements.txt
+```
 
 ### 3️⃣ Run the Flask app
+```
 python app.py
+```
 
 ### 4️⃣ Open in browser
+```
 http://127.0.0.1:5000
+```
+---
+
+## 🎥 Demo Video
+
+Watch here: https://drive.google.com/drive/folders/1CuwKVudykVi61X-clY4UhPfaNU80cSyH?usp=sharing
 
 ---
 
