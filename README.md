@@ -161,7 +161,16 @@ python app.py
 http://127.0.0.1:5000
 ```
 ---
+## 📄 Project Report
 
+The detailed project report explaining the problem statement, dataset, preprocessing, feature engineering, models, evaluation metrics, and web interface is available here:
+
+ 📘 **[AutoJudge – Project Report](AutoJudge_report.pdf)**
+ 
+These reports document the complete methodology, experimental results, and design decisions behind AutoJudge.
+
+ ---
+ 
 ## 🎥 Demo Video
 
 Watch here: https://drive.google.com/drive/folders/1CuwKVudykVi61X-clY4UhPfaNU80cSyH?usp=sharing
